@@ -1,0 +1,16 @@
+name: Release
+# Packagist updates itself from GitHub tags once the package is submitted (packagist.org → Submit).
+# This workflow only cuts the GitHub release.
+on:
+  push: { tags: ["v*"] }
+permissions: { contents: write }
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with: { php-version: "8.3", extensions: curl, json }
+      - run: composer install --no-interaction && vendor/bin/phpunit
+      - uses: softprops/action-gh-release@v2
+        with: { generate_release_notes: true }
