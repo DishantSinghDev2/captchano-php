@@ -1,7 +1,6 @@
 # CaptchaNo PHP SDK — Captcha Solver API Client for PHP
 
 [![Packagist](https://img.shields.io/packagist/v/captchano/captchano)](https://packagist.org/packages/captchano/captchano)
-[![CI](https://github.com/DishantSinghDev2/captchano-php/actions/workflows/ci.yml/badge.svg)](https://github.com/DishantSinghDev2/captchano-php/actions/workflows/ci.yml)
 [![PHP](https://img.shields.io/badge/php-%3E%3D8.1-777bb4)](composer.json)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
