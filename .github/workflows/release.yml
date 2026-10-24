@@ -12,5 +12,5 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with: { php-version: "8.3", extensions: curl, json }
       - run: composer install --no-interaction && vendor/bin/phpunit
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with: { generate_release_notes: true }
